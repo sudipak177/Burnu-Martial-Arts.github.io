@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnu Martial Arts</title>
+</head>
+<style>
+  * {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    color: #fff;
+    padding: 15px 10px;
+    
+    
+}
+
+.navbar-left {
+    margin-top: 0%;
+    margin-left: 1%;
+   
+}
+.navbar-right {
+    margin-right: -2%;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    margin-right: -15px;
+    background-color: rebeccapurple;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      transition: 0.5s;
+      padding: 5px;
+    }
+
+.membership-btn, .register-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav{
+    margin-left: 15%;
+    font-size: larger;
+    
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      padding: 5px;
+      
+}
+    label.name{
+    color: white;
+    font-size:30px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+    }
+    .footer {
+            background-color: antiquewhite;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .credits {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .credits a {
+            color: #af1f31;
+            text-decoration: none;
+        }
+
+        .payment_methods img {
+            margin: 0 5px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+  body {
+    background-image: url('photo1.png'); /* Replace with your image path or URL */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+.text {
+    color: whitesmoke;
+    font-family: 'Jacques Francois Shadow', sans-serif;
+    font-size: 60px; /* Adjust the font size as needed */
+    font-style: initial;
+    font-weight: bold; /* Make the text bold */
+    line-height: normal;
+    margin-left: 2%; /* Center the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    
+}
+.abc {
+    font-family: 'Roboto', sans-serif; /* Example font choice */
+    color: whitesmoke; /* Example font color */
+    font-size: 50px; /* Example font size */
+    font-weight: bold; /* Make the text bold */
+    line-height: 1.6; /* Adjust the line height */
+    margin-top: 1%;
+    float: left;
+    width: 50%; /* Adjust the width to control the positioning */
+}
+
+
+.cba{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    float: right;
+    width: 50%; /* Adjust the width to control the positioning */
+    list-style-type: disc; /* Add bullets */
+    padding-left: 50em; /* Adjust the space between the bullet and text */
+    font-size: x-large;
+    margin-right: 2%;
+    margin-top: 2.5%;
+    border: 2px solid orangered;
+    padding: 45px;
+    max-width:fit-content;
+    
+}
+.kura {
+    border: 2px solid orangered;
+    padding: 10px; /* Add padding for some space between the text and the border */
+    max-width: 1400px; /* Adjust the maximum width as per your design */
+    margin: auto; /* Center the element horizontally */
+    margin-top: 25%;
+}
+
+.kura p {
+    font-family: 'times new roman', sans-serif; /* Replace 'YourFont' with the desired font */
+    font-size: 25px; /* Adjust the font size as needed */
+    color: whitesmoke; /* Adjust the text color */
+    text-align: center; /* Center the text */
+}
+.content {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid orangered; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: transparent; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.content p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: whitesmoke; /* Font color */
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333; /* Font color */
+}
+.text,
+  .kura,
+  .content {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Add a slight vertical movement */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+</style>
+
+<body>
+
+    <nav class="navbar">
+
+        <label class="name">Burnu Martial Arts</label>
+    
+       <div class="nav">
+       
+            <a class="active" href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="membership.html">Membership</a>
+            
+        
+        </div>
+        <div class="navbar-right">
+            <a href="register.html" class="register-btn">Register Now</a>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="text">
+        <p class="abc">Empower Yourself <br>Through Martial <br> Arts</p>
+        <ul class="cba">
+          <li>Variety of Martial Arts Offered</li>
+          <li>Fully-Equipped Gym</li>
+          <li>Sauna and Steam Room</li>
+          <li>Experienced and Accredited Instructors</li>
+          <li>Focus on Fitness and Self-Defense</li>
+        </ul>
+      </div>
+    <div class="kura">
+        <p>Burnu Martial Arts is committed to providing high-quality training in various martial arts disciplines.Our mission is to empower individuals through fitness, self-defense, and personal growth. With experienced instructors and top-notch facilities, we offer a comprehensive approach to martial arts.</p>
+    </div>
+    <ul class="content">
+    <p>Our programs cater to individuals of all ages and skill levels. Whether you're a beginner looking to develop foundational skills or an advanced practitioner seeking to refine your techniques, we have a program for you.</p>
+
+        <p>At Burnu Martial Arts, we believe in fostering a supportive and inclusive community. Join us on a journey of self-discovery and physical transformation.</p>
+    </ul>
+      
+    <div class="footer">
+        <div class="container">
+            <p class="credits">
+                Designed by Sudip Rayamajhi</a><br/>
+                &copy; 2023 Burnu Martial Arts
+            </p>
+            <p class="payment_methods">
+                <img src="photo4.webp" alt="PayPal" />
+                <img src="photo5.webp" alt="Visa" />
+                <img src="photo6.webp" alt="Mastercard" />
+                <img src="photo7.svg" alt="American Express" />
+            </p>
+        </div>
+    </div>   
+</body>
+
+</html>

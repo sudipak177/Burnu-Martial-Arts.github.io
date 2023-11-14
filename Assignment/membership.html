@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnu Martial Arts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+  * {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 10px;
+    
+}
+body {
+    background-image: url('photo1.png'); /* Replace with your image path or URL */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment:fixed;/* Keeps the background fixed while scrolling */
+}
+
+.navbar-left {
+    margin-top: 0%;
+    margin-left: 1%;
+   
+}
+.navbar-right {
+    margin-right: -2%;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    margin-right: -15px;
+    background-color: rebeccapurple;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      transition: 0.5s;
+      padding: 5px;
+    }
+
+.membership-btn, .register-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav{
+    margin-left: 15%;
+    font-size: larger;
+    
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      padding: 5px;
+      
+}
+    label.name{
+    color: white;
+    font-size:30px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+    }
+
+
+        .footer {
+            background-color: antiquewhite;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .credits {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .credits a {
+            color: #af1f31;
+            text-decoration: none;
+        }
+
+        .payment_methods img {
+            margin: 0 5px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+.containerr {
+  max-width: 800px;
+  background-color: #E9E0E0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 23%;
+}
+
+/* Pricing Table Styles */
+.pricing-table {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #F0F3F3;
+}
+
+.pricing-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing-price {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pricing-details {
+  font-size: 1em;
+}
+
+/* Special Offer */
+.special-offer {
+  border: 2px solid #ffd700;
+  background-color: yellow;
+}
+
+/* Additional Services Styles */
+.additional-services {
+  margin-top: 30px;
+}
+
+.additional-service {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.additional-price {
+  color: #333;
+  font-weight: bold;
+}
+h1{
+      font-style: italic;
+      margin-left: 38%;
+      margin-top: 1%;
+      color: #f9f9f9;
+      font-size: xx-large;
+    }
+    .containerrr {
+  max-width: 1000px;
+  height: 525px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 15%;
+}
+
+
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  height: 480px;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+  
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f0f0f0;
+}
+
+/* Cell Colors */
+.cell-judo { background-color: #FFD700; }
+.cell-jiu-jitsu { background-color: #FFA07A; }
+.cell-karate { background-color: #90EE90; }
+.cell-muay-thai { background-color: #87CEFA; }
+.cell-open-mat { background-color: #D3D3D3; }
+.cell-private-tuition { background-color: #FF4500; }
+.cell-kids { background-color: #98FB98; }
+
+.table2 {
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .odd-row {
+            background-color: #f9f9f9;
+        }
+        .even-row {
+            background-color: #87CEFA;
+        }
+
+        .details {
+            font-weight: bold;
+        }
+        .text,
+  .findus,
+  #contactForm,
+  .footer,
+  .containerr,
+  .containerrr,
+  .table2 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Add a slight vertical movement */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+</style>
+
+<body>
+
+    <nav class="navbar">
+
+        <label class="name">Burnu Martial Arts</label>
+    
+       <div class="nav">
+       
+            <a  href="index.html">Home</a>
+            <a  href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="membership.html">Membership</a>
+            
+        
+        </div>
+        <div class="navbar-right">
+            <a href="register.html" class="register-btn">Register Now</a>
+        </div>
+    </nav>
+    <br>
+    <h1>Price and membership option</h1>
+    <br>
+    <div class="containerr">
+        <div class="pricing-table">
+          <div class="pricing-title">Basic</div>
+          <div class="pricing-price">£25.00/month</div>
+          <div class="pricing-details">1 martial art - 2 sessions per week</div>
+        </div>
+      
+        <div class="pricing-table special-offer">
+          <div class="pricing-title">Elite</div>
+          <div class="pricing-price">£60.00/month</div>
+          <div class="pricing-details">Unlimited Classes</div>
+        </div>
+      
+        <div class="additional-services">
+          <div class="additional-service">Private martial arts tuition – per hour <span class="additional-price">£15.00</span></div>
+          <div class="additional-service">Junior membership – can attend all-kids martial arts sessions <span class="additional-price">£25.00</span></div>
+          <div class="additional-service">Six-week beginners’ self-defence course (2 × 1-hour session per week) <span class="additional-price">£180.00</span></div>
+          <div class="additional-service">Use of fitness room – per visit <span class="additional-price">£6.00</span></div>
+          <div class="additional-service">Personal fitness training – per hour <span class="additional-price">£35.00</span></div>
+        </div>
+    </div>
+    <h1>Martial Arts Class Timetable</h1><br>
+    <div class="containerrr">
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+            <tr>
+              <td>06:00–07:30</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-karate">Karate</td>
+              <td class="cell-judo">Judo</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-muay-thai">Muay Thai</td>
+              <td class="khali">_</td>
+              <td class="khali">_</td>
+            </tr>
+            <tr>
+              <td>08:00–10:00</td>
+              <td class="cell-muay-thai">Muay Thai</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-private-tuition">Private tuition</td>
+            </tr>
+            <tr>
+              <td>10:30–12:00</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="cell-judo">Judo</td>
+              <td class="cell-karate">Karate</td>
+            </tr>
+            <tr>
+              <td>13:00–14:30</td>
+              <td class="cell-open-mat">Open Mat/Personal Practice</td>
+              <td class="cell-open-mat">Open Mat/Personal Practice</td>
+              <td class="cell-open-mat">Open Mat/Personal Practice</td>
+              <td class="cell-open-mat">Open Mat/Personal Practice</td>
+              <td class="cell-open-mat">Open Mat/Personal Practice</td>
+              <td class="cell-karate">Karate</td>
+              <td class="cell-judo">Judo</td>
+            </tr>
+            <tr>
+              <td>15:00–17:00</td>
+              <td class="cell-kids">Kids Jiu-jitsu</td>
+              <td class="cell-kids">Kids Judo</td>
+              <td class="cell-kids">Kids Karate</td>
+              <td class="cell-kids">Kids Jiu-jitsu</td>
+              <td class="cell-kids">Kids Judo</td>
+              <td class="cell-muay-thai">Muay Thai</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+            </tr>
+            <tr>
+              <td>17:30–19:00</td>
+              <td class="cell-karate">Karate</td>
+              <td class="cell-muay-thai">Muay Thai</td>
+              <td class="cell-judo">Judo</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-muay-thai">Muay Thai</td>
+              <td class="khali">_</td>
+              <td class="khali">_</td>
+            </tr>
+            <tr>
+              <td>19:00–21:00</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-judo">Judo</td>
+              <td class="cell-jiu-jitsu">Jiu-jitsu</td>
+              <td class="cell-karate">Karate</td>
+              <td class="cell-private-tuition">Private tuition</td>
+              <td class="khali">_</td>
+              <td class="khali">_</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+<h1>Instructor Details</h1>
+<br>
+<table class="table2">
+    <tr>
+        <th>Name & Job</th>
+        <th>Details</th>
+    </tr>
+    <tr class="odd-row">
+        <td>Thomas Cook (gym owner/head coach)</td>
+        <td class="details">
+            Coaches in all martial arts<br>
+            4th Dan Blackbelt judo<br>
+            3rd Dan Blackbelt jiu-jitsu<br>
+            1st Dan Blackbelt karate<br>
+            Accredited Muay Thai coach
+        </td>
+    </tr>
+    <tr class="even-row">
+        <td>Andrew Smith (assistant martial arts coach)</td>
+        <td class="details">5th Dan karate</td>
+    </tr>
+    <tr class="odd-row">
+        <td>Powel Johnson (assistant martial arts coach)</td>
+        <td class="details">
+            2nd Dan Blackbelt jiu-jitsu<br>
+            1st Dan Blackbelt judo
+        </td>
+    </tr>
+    <tr class="even-row">
+        <td>Harris William (assistant martial arts coach)</td>
+        <td class="details">
+            Accredited Muay Thai coach<br>
+            3rd Dan Blackbelt karate
+        </td>
+    </tr>
+    <tr class="odd-row">
+        <td>Joseph Anderson (fitness coach)</td>
+        <td class="details">
+            BSc in Sports Science<br>
+            Qualified in health and nutrition<br>
+            Specializes in devising strength and conditioning programs for combat athletes
+        </td>
+    </tr>
+    <tr class="even-row">
+        <td>Allen Murphy (fitness coach)</td>
+        <td class="details">
+            BSc in Physiotherapy<br>
+            MSc in Sports Science
+        </td>
+    </tr>
+</table>
+    <br>
+    
+    <div class="footer">
+        <div class="container">
+            <p class="credits">
+                Designed by Sudip Rayamajhi</a><br/>
+                &copy; 2023 Burnu Martial Arts
+            </p>
+            <p class="payment_methods">
+                <img src="photo4.webp" alt="PayPal" />
+                <img src="photo5.webp" alt="Visa" />
+                <img src="photo6.webp" alt="Mastercard" />
+                <img src="photo7.svg" alt="American Express" />
+            </p>
+        </div>
+    </div>
+
+
+    
+
+   
+</body>
+</html>

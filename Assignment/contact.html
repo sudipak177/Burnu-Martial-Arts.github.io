@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnu Martial Arts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<style>
+  * {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 10px;
+    
+}
+
+.navbar-left {
+    margin-top: 0%;
+    margin-left: 1%;
+   
+}
+.navbar-right {
+    margin-right: -2%;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    margin-right: -15px;
+    background-color: rebeccapurple;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      transition: 0.5s;
+      padding: 5px;
+    }
+
+.membership-btn, .register-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav{
+    margin-left: 15%;
+    font-size: larger;
+    
+}
+a:hover,
+    a.active {
+      background: skyblue;
+      padding: 5px;
+      
+}
+    label.name{
+    color: white;
+    font-size:30px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+    }
+
+  .text {
+
+max-width: 1200px;
+margin: 1% auto;
+padding: 30px;
+background-color: #f9f9f9;
+border: 3px solid orangered;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+font-family:  'Times New Roman', Times, serif;
+font-size: 18px;
+line-height: 1.8;
+color: black;
+text-align: center;
+}
+
+@media only screen and (max-width: 100) {
+.text {
+  font-size: 16px;
+}
+}
+.findus {
+display: flex;
+
+}
+
+
+
+.findus p {
+margin-left: 15%; /* Adjust the space between the image and text */
+margin-top: 2%;
+font-weight: bold;
+
+
+}
+.centerdiv{
+display: flex;
+align-items: center;
+margin-left: -15%;
+margin-bottom: 15%;
+
+}
+.divdiv{
+display: flex;
+align-items: center;
+margin-left: -10%;
+margin-top: 15%;
+
+}
+.icon{
+font-size: 70px;
+color: blue;
+margin-right: 2%;
+padding: 15%;
+}
+.icon:hover{
+color: red;
+}
+form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="tel"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    .error {
+      color: red;
+    }
+
+    @media only screen and (max-width: 600px) {
+      form input[type="text"],
+      form input[type="tel"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+      }
+    }
+    form {
+      width: 700px;
+      padding: 40px;
+      border: 3px solid orangered;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      color: #f9f9f9;
+    }
+    .contactphoto{
+      margin-left: 1%;
+      margin-top: 1%;
+      border: 3px solid orangered;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 55%;
+    }
+    h1{
+      font-style: italic;
+      margin-left: 45%;
+      margin-top: 1%;
+      color: #f9f9f9;
+      font-size: xx-large;
+    }
+    body {
+    background-image: url('photo1.png'); /* Replace with your image path or URL */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment:fixed;/* Keeps the background fixed while scrolling */
+}
+.sudip{
+    color: #f9f9f9;
+    margin-right: 1%;
+}
+
+
+     .footer {
+            background-color:antiquewhite;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .credits {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .credits a {
+            color: #af1f31;
+            text-decoration: none;
+        }
+
+        .payment_methods img {
+            margin: 0 5px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        .text {
+    /* Existing styles */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Add fade-in animation for findus section */
+  .findus {
+    /* Existing styles */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Add fade-in animation for contact form */
+  #contactForm {
+    /* Existing styles */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Add fade-in animation for footer */
+  .footer {
+    /* Existing styles */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+    
+
+
+</style>
+
+<body>
+
+    <nav class="navbar">
+
+        <label class="name">Burnu Martial Arts</label>
+    
+       <div class="nav">
+       
+            <a  href="index.html">Home</a>
+            <a  href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a  href="membership.html">Membership</a>
+            
+        
+        </div>
+        <div class="navbar-right">
+            <a href="register.html" class="register-btn">Register Now</a>
+        </div>
+    </nav>
+    <h1 style="font-size: xx-large;">Contact Us</h1>
+    <div class="findus">
+    
+    <img class="contactphoto" src="photo3.webp">
+
+    <p style="font-size: xx-large;  "  class="sudip">FIND US ON</p>
+    
+    
+    <div class="centerdiv">
+      <a href="https://www.facebook.com/su.dip.3363334" target="_blank" class="icon">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/sudiprc_25/" target="_blank" class="icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="divdiv">
+      <a href="#" target="_blank" class="icon">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank" class="icon">
+        <i class="fa-brands fa-threads"></i>
+      </a>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="text">
+    <p>
+      We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us using the contact form below. Our team is always ready to assist you and provide the information you need.
+    </p>
+    </div>
+    
+    
+    <section id="contact">
+      <h3 style="text-align: center; text-decoration:blue; color: #f9f9f9;">Get in Touch</h3>
+      
+      <form id="contactForm" onsubmit="return validateForm()" style="margin-left: 25%;">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
+    
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" required>
+        <span id="phoneError" class="error"></span>
+    
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+    
+        <label for="message">Comment or Review*</label>
+        <textarea id="message" name="message" required></textarea>
+        <span id="messageError" class="error"></span>
+    
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </section>
+
+<br>
+<div class="footer">
+  <div class="container">
+      <p class="credits">
+          Designed by Sudip Rayamajhi</a><br/>
+          &copy; 2023 Burnu Martial Arts
+      </p>
+      <p class="payment_methods">
+        <img src="photo4.webp" alt="PayPal" />
+        <img src="photo5.webp" alt="Visa" />
+        <img src="photo6.webp" alt="Mastercard" />
+        <img src="photo7.svg" alt="American Express" />
+      </p>
+  </div>
+</div>
+    
+
+   
+</body>
+
+
+</html>

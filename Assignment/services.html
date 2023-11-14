@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnu Martial Arts</title>
+</head>
+<style>
+  * {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url('photo1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.navbar-left {
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+.navbar-right {
+    margin-right: -2%;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    margin-right: -15px;
+    background-color: rebeccapurple;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+    transition: background 0.5s, padding 0.5s;
+}
+
+a:hover,
+a.active {
+    background: skyblue;
+    padding: 5px;
+}
+
+.membership-btn, .register-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav {
+    margin-left: 15%;
+    font-size: larger;
+}
+
+a:hover,
+a.active {
+    background: skyblue;
+    padding: 5px;
+}
+
+label.name {
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.credits {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.credits a {
+    color: #af1f31;
+    text-decoration: none;
+}
+
+.payment_methods img {
+    margin: 0 5px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+h1 {
+    font-style: italic;
+    margin-left: 43%;
+    margin-top: 1%;
+    color: #f9f9f9;
+    font-size: xx-large;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+h2 {
+    font-style: italic;
+    margin-left: 40%;
+    margin-top: 1%;
+    color: #f9f9f9;
+    font-size: xx-large;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.text {
+    max-width: 1200px;
+    margin: 1% auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.product-item {
+    flex: 1;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 300px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.product-item img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.tutionphoto img {
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    margin-left: 15%;
+    border: 4px solid orangered;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.kuro {
+    max-width: 1200px;
+    margin: 1% auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 1.8;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <label class="name">Burnu Martial Arts</label>
+        <div class="nav">
+            <a  href="index.html">Home</a>
+            <a  href="aboutus.html">About Us</a>
+            <a class="active" href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="membership.html">Membership</a>
+        </div>
+        <div class="navbar-right">
+            <a href="register.html" class="register-btn">Register Now</a>
+        </div>
+    </nav>
+    <h1>Our Services</h1>
+    <p class="text">At Burnu Martial Arts, we fuse tradition with innovation, providing a dynamic platform for self-improvement through martial arts. With a legacy of 10 years, we're dedicated to nurturing both physical and mental strength, creating a community of empowered individuals</p>
+    <h2>Martial Arts Classes</h2>
+    <div class="product">
+        <div class="product-item">
+            <img style="width: 90%;" src="photo8.jpeg" alt="Product 1" class="image">
+            <h3>Jiu-jitsu</h3>
+            <p>Emphasizes leverage and technique for effective self-defense,<br> suitable for all sizes and abilities.</p>
+        </div>
+        <div class="product-item">
+            <img style="width: 92%;" src="photo9.jpeg" alt="Product 2" class="image">
+            <h3>Karate</h3>
+            <p>Promotes discipline, focus, and self-confidence, enhancing mental fortitude and self-awareness.<br>    
+            </p>
+        </div>
+        <div class="product-item">
+            <img style="width: 90%;" src="photo10.jpeg" alt="Product 3" class="image">
+            <h3>Judo</h3>
+            <p>Practical self-defense with throws and takedowns, builds strength, flexibility, and effective grappling techniques</p>
+        </div>
+        <div class="product-item">
+            <img style="width: 90%;" src="photo11.jpeg" alt="Product 4" class="image">
+            <h3>Muay Thai</h3>
+            <p>Highly effective striking art utilizing the entire body, improves cardiovascular fitness and overall body conditioning</p>
+        </div>
+    </div>
+    <div class="tutionphoto">
+        <img src="photo12.jpeg">
+    </div>
+    <p class="kuro">Burnu Martial Arts also offers Private Tuition class.</p>
+
+    <div class="footer">
+        <div class="tauko">
+            <p class="credits">
+                Designed by Sudip Rayamajhi<br/>
+                &copy; 2023 Burnu Martial Arts
+            </p>
+            <p class="payment_methods">
+                <img src="photo4.webp" alt="PayPal" />
+                <img src="photo5.webp" alt="Visa" />
+                <img src="photo6.webp" alt="Mastercard" />
+                <img src="photo7.svg" alt="American Express" />
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
