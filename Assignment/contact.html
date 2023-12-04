@@ -334,19 +334,19 @@ form label {
       
       <form id="contactForm" onsubmit="return validateForm()" style="margin-left: 25%;">
         <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name">
         <span id="nameError" class="error"></span>
     
         <label for="phone">Phone*</label>
-        <input type="tel" id="phone" name="phone" required>
+        <input type="tel" id="phone" name="phone">
         <span id="phoneError" class="error"></span>
     
         <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
         <span id="emailError" class="error"></span>
     
         <label for="message">Comment or Review*</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message"></textarea>
         <span id="messageError" class="error"></span>
     
         <input type="submit" value="Submit">
@@ -370,6 +370,65 @@ form label {
       </p>
   </div>
 </div>
+<script>
+  function validateForm() {
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var nameError = document.getElementById('nameError');
+      var phoneError = document.getElementById('phoneError');
+      var emailError = document.getElementById('emailError');
+      var messageError = document.getElementById('messageError');
+
+      // Reset error messages
+      nameError.innerHTML = "";
+      phoneError.innerHTML = "";
+      emailError.innerHTML = "";
+      messageError.innerHTML = "";
+
+      // Validate Name
+      if (name === "") {
+          nameError.innerHTML = "Name is required";
+          return false;
+      }
+
+      // Validate Phone
+      if (phone === "number") {
+                phoneError.innerHTML = "Phone is required";
+                return false;
+            } else {
+                // Check if phone has exactly 10 digits
+                var phonePattern = /^\d{10}$/;
+                if (!phonePattern.test(phone)) {
+                    phoneError.innerHTML = "Phone number must have exactly 10 digits";
+                    return false;
+                }
+            }
+
+      // Validate Email
+      if (email === "") {
+          emailError.innerHTML = "Email is required";
+          return false;
+      } else {
+          // Simple email validation
+          var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+              emailError.innerHTML = "Invalid email format";
+              return false;
+          }
+      }
+
+      // Validate Message
+      if (message === "") {
+          messageError.innerHTML = "Message is required";
+          return false;
+      }
+
+      return true;
+  }
+</script>
     
 
    
